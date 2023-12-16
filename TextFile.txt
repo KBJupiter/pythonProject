@@ -2,5 +2,3 @@ File 1
 
 Hello
 Hello World
-
-This is existing file - 20231216
