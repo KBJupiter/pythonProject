@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "To read file content"
+
+while read line
+do
+    echo "$line"
+done < HelloWorld.sh
+
+cat HelloWorld.sh | while read line
+do
+    echo "$line"
+done < HelloWorld.sh
+
+while IFS=' ' read -r line
+do
+    echo "$line"
+done < HelloWorld.sh

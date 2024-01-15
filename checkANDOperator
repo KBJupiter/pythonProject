@@ -1,0 +1,21 @@
+#!/bin/sh
+
+echo "To check AND Operator"
+
+echo -e "Enter Valid age \c"
+read $age
+
+if [ $age -le 18 ] && [ $age -le 65 ]
+then
+  echo "$age is a valid working age"
+else
+  echo "$age is a valid retirement age"
+fi
+
+if [[ $age -le 18 && $age -le 65 ]]
+then
+  echo "$age is a valid working age"
+else
+  echo "$age is a valid retirement age"
+fi
+
